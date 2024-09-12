@@ -1,0 +1,321 @@
+body{
+    margin: 0;  /* margin is space outside or around an element*/
+    padding: 0; /* padding is space within an element*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    background-color: #7fffd4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px 80px 30px 30px;
+}
+
+.logo-container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: brown;
+}
+
+.logo-container img{
+    width: 40px;
+    height: 40px;
+    margin-top: -5px;
+}
+.logo-container h2{
+    margin: 0;
+}
+
+.navlinks a{
+    color: brown;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 15px;
+}
+.navlinks a:hover{
+    border-bottom: 5px solid brown;
+    padding-bottom: 32.5px;
+}
+
+.hero{
+    /* background-image: url('./images/1.jpg'); */
+    background: linear-gradient(#000000b3, #000000b0), url('./images/1.jpg');
+    height: 645px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+/*filter brightness(40%);*/
+    background-attachment: fixed;
+}
+
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12%;
+    width: 70%;
+}
+
+.hero-text h1{
+    text-align: center;
+    margin: 0;
+    font-size: 70px;
+    color: aquamarine;
+}
+
+.hero-text p{
+    text-align: center;
+    width: 60%;
+    font-size: 16px;
+    color: white;
+}
+
+
+.hero-text button{
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 100px;
+    border: 2px solid aquamarine;
+    background-color:  aquamarine;
+    color: brown;
+    margin-top: 15px;
+}
+
+.hero-text button:hover{
+    background-color: brown;
+    color: aquamarine;
+    border: 2px solid brown;
+    transition: 0.5s;
+}
+
+.about{
+    padding: 180px;
+    display: grid;
+    grid-template-columns: 42% 50%;
+    gap: 50px;
+    align-items: center;
+}
+
+.intro{
+background-color:rgba(255, 255, 255, 0.717);
+padding: 50px;
+border: 1px solid rgba(128, 128, 128, 0.386);
+border-radius: 30px;
+}
+
+.about h1{
+    color: brown;
+    font-size: 70px;
+    margin: 0;
+}
+
+.about p{
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.about a{
+    text-decoration: none;
+    background-color: aquamarine;
+    color: brown;
+    transition: 0.5 ease-in-out;
+    padding: 14px 30px;
+    border-radius: 100px;
+}
+
+.about a:hover{
+    background-color: aquamarine;
+    color: brown;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 70px;
+    padding: 0 80px 50px 80px;
+}
+
+.services h2{
+font-size: 40px;
+color: brown;
+text-decoration: underline;
+margin-top: 0;
+}
+
+.services img{
+    border-radius: 30px;
+}
+
+.list{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.list h3{
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+
+.list p{
+    margin-top: 7px;
+}
+
+.list img{
+    width: 20px;
+    height: 20px;
+}
+.cta{
+    padding: 100px;
+}
+
+.cta-text{
+    background-color: aquamarine;
+    padding: 20px 80px;
+    display:flex;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 50px;
+}
+
+.cta-text h2{
+    font-size: 50px;
+    color: brown;
+
+}
+.cta-text p{
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 50px;
+
+}
+
+
+.cta-text a{
+    text-decoration: none;
+    background-color: brown;
+    padding: 10px 30px;
+    border: 100px;
+    border-radius: 100px;
+    color: aquamarine;
+
+}
+
+footer{
+    background-color: aquamarine;
+    display:flex;
+    justify-content: space-between;
+    padding: 80px;
+
+}
+footer img{
+    width: 80px;
+    height: 80px;
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.footer-link{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+    margin-left: 0 !important;
+}
+.footer-link ul{
+    list-style-type: none;
+    margin-left: 0 !important;
+}
+.footer-link ul li{}
+
+.contact{
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact h2{
+    text-align: center;
+    font-size: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.fields{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+}
+
+.address{ 
+    display: flex;
+    flex-direction: column;
+}
+.address label{
+    font-size:20 ;
+    margin: 20px 0 10px 0;
+}
+.address textarea{
+    outline: none;
+    border: 1px solid #d9d8d8;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.field label{
+    font-size: 20px;
+}
+.field input{
+    outline: none;
+    border: 1px solid #d9d8d8;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.btn button{
+    background-color: aquamarine;
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.field select{
+    outline: none;
+    border: 1px solid #d9d8d8;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+
+

@@ -1,0 +1,245 @@
+body{
+    font-family:'poppins';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    padding: 20px 10px;
+    border-right: 1px solid #9e9e9e;
+    height: 700px;
+    width: 4%;
+    position: fixed;
+    background-color: white;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.side-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+}
+.side-icon:first-child{
+    margin-bottom: 20px;
+    
+}
+.side-icon img{
+    width: 25px;
+
+}
+.main{
+    position: relative;
+    left: 7%;
+}
+.hero{
+    width:93%;
+    display:block;
+    justify-content:space-between;
+    align-items:start;
+    position: fixed;
+    background-color: white;
+    z-index: 5;
+}   
+
+.nav{
+    display: grid;
+    grid-template-columns: 20% 50% 20% ;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav img{
+    width: 120px;
+    height: auto;
+
+}
+.mic img{
+    width: 20px;
+    cursor: pointer;
+    background-color: #e1e1e1;
+    padding: 10px;
+    border-radius: 50px;
+}
+.mic img:hover{
+    background-color: #c4c2c2;
+    transition: 0.4s ease-in-out;
+}
+
+.center{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+.search{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid gray;
+    padding-left: 20px;
+    border-radius: 50px;
+    width: 80%;
+}
+.search input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: 'poppins';
+}
+.search img{
+    width:20px;
+    height:20px;
+    padding:10px 20px;
+    cursor: pointer;
+    border-left: 1px solid gray;
+}
+.right.icons{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.right-icons img{
+    width: 24px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50px;
+    
+    }
+.right-icons img:last-child{
+    width:18px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.right-icons img:hover{
+    background-color: #c4c2c2;
+    transition: 0.4s ease-in-out;
+}
+.tabs{
+    display: inline-flex;
+    gap: 13px;
+    margin: 20px 10px 45px 10px;
+    position: relative;
+    top: 4.5%;
+} 
+.tabs span{
+    padding: 5px 10px;
+    background-color: #e1e1e1;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.videos{
+display: grid;
+grid-template-columns: 32% 32% 32%;
+gap: 20px;
+margin-top: 40px;
+padding: 0 10px;
+
+}
+.vid{
+width: 350px;
+
+}
+.vid video{
+    width: 350px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.video-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 5px;
+    width: 100%;
+}
+.video-info img{
+    width: 30px;
+    margin-top: 5px;
+}
+.video-info img:last-child{
+    width: 20px;
+    margin-top: 5px;
+}
+.stats{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.first{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+.title h4{
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.title span{
+    font-size: 12px;
+    color: #606060;
+}
+.shorts{
+    padding: 60px 10px;
+    position: relative;
+}
+.shorts h1{
+font-size: 32px;
+}
+.short{
+    display: flex;
+    gap: 24px;
+}
+.short video{
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*@media screen and (max-width:768px){
+.main{
+    width: 100%;
+}
+.videos{
+    display: block;
+    width: 100%;
+}
+.video{
+    width: 920px;
+}
+.vid{
+    width: 920px;
+    margin-left: 15px;
+}
+.tabs{
+    display: inline-block;
+    width: 100px;
+    top: 1.6%;
+    margin-left: 20px;
+}
+.tabs span{
+    margin-bottom: 80px;
+    padding: 8px 20px;
+}
+.sidebar a{
+    font-size: 7px;
+}*/
